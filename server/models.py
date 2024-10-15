@@ -64,6 +64,6 @@ class RestaurantPizza(db.Model, SerializerMixin):
         'pizza_id': self.pizza_id,
         'restaurant_id': self.restaurant_id,
         'pizza': self.pizza.to_dict() if self.pizza else None,
-        'restaurant': self.restaurant.to_dict() if self.restaurant else None,  # Ensure this line is included
+        'restaurant': self.restaurant.to_dict() if self.restaurant else None, 
     }  
       return data
